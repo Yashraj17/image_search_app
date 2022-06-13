@@ -82,7 +82,7 @@ export default function Header2({handleData}) {
             <StyledInputBase
             onKeyPress={(e)=>handlePress(e)}
             onChange={(e)=>setSearch(e.target.value)}
-              placeholder="Search…"
+              placeholder="Search Images…"
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>

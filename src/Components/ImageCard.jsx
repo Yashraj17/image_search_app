@@ -14,7 +14,9 @@ const ImageCard = ({img,isProcess}) => {
             <CardMedia
                 component="img"
                 height="240"
+                width='auto'
                 image={img}
+                sx={{objectFit: 'cover'}}
                 alt="green iguana"
             />
             </CardActionArea>

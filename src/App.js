@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Header from "./Components/Header";
 import ImageCard from "./Components/ImageCard";
 import {Grid,Stack,Typography,Box,Button,ButtonGroup } from '@mui/material'
 import CircularProgress from '@mui/material/CircularProgress';
@@ -37,13 +36,12 @@ function App() {
 
   return (
    <>
-    {/* <Header handleData={(search)=>handleData(search)}/> */}
     <Header2  handleData={(search)=>handleData(search)}/>
     <Grid container spacing={2} sx={{padding:2}} >
       {
 
         data?.map((value,index)=>(
-              <Grid item xs={12} key={index} lg={2}>
+              <Grid item xs={12} md={6} key={index} lg={2}>
             <ImageCard img={value.urls.small}/>
             </Grid>
        
