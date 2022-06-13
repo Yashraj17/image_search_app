@@ -5,6 +5,7 @@ import {Grid,Stack,Typography,Box,Button,ButtonGroup } from '@mui/material'
 import CircularProgress from '@mui/material/CircularProgress';
 
 import axios from 'axios';
+import Header2 from './Components/Header2';
 
 function App() {
   const [data,setData] = useState(null);
@@ -36,7 +37,8 @@ function App() {
 
   return (
    <>
-    <Header handleData={(search)=>handleData(search)}  />
+    {/* <Header handleData={(search)=>handleData(search)}/> */}
+    <Header2  handleData={(search)=>handleData(search)}/>
     <Grid container spacing={2} sx={{padding:2}} >
       {
 
